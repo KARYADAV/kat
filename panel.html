@@ -1,0 +1,151 @@
+<html>
+<body bgcolor="lightgrey" align="center">
+<h1 align="center">Solar Panel</h1>
+<hr>
+<div>
+
+
+<p><div id="myBtn1" class ="popup1"> Contact Us<div id="myModal1" class ="m1"><span class="popuptext1" id="myPopup1"><a href="listhai.html"></a></span></div></div>
+
+
+<div id="myBtn" class ="popup"> Contact Us<div id="myModal" class ="m"><span class="popuptext" id="myPopup"><ul><li>enquiry</li><li><a href="#here">email us</a></li></ul></span></div></div></p>
+
+
+</div>
+<style>
+
+
+* {box-sizing:border-box}
+
+.popup{
+
+position:relative;
+dispaly:inline-block;
+cursor:pointer;
+left:2;
+top:2;
+}
+.popup .popuptext{
+
+visibility:visible;
+width:160px;
+background-color: #555;
+color:#fff;
+text-align:center;
+border-radius:6px;
+padding:8px 0;
+position: absolute;
+z-index:1;
+bottom:105%;
+left: 50%;
+margin-left: -80px;
+
+}
+
+.popup .popuptext::after{
+
+content:"";
+position: absolute;
+top:100%;
+left: 50%;
+margin-left:-5px;
+border-width:5px;
+border-style:solid;
+border-color:#555 transparent transparent transparent;
+
+}
+
+.popup .show{
+
+visibility: visible;
+-webkit-animation:fadeIn Is;
+animation: fadeIn Is;
+
+}
+
+@-webkit-keyframes fadeIn{
+
+from {opacity:0;}
+to {opacity:1;}
+
+}
+
+@keyframes fadeIn{
+
+from{opacity:0;}
+to{opacity:1;}
+
+}
+
+
+</style>
+<script>
+
+
+
+
+var modal=document.getElementById("myModal");
+var btn=document.getElementById("myBtn");
+var span=document.getElementsByClassName("popuptext")[0];
+btn.onmouseover=function(){
+modal.style.display="block";
+}
+
+
+span.onmouseout=function(){
+modal.style.display="none";
+}
+
+window.onmouseout=function(){
+modal.style.display="none";
+}
+
+
+
+
+
+
+</script>
+
+
+<hr>
+<img src="F:\kateeee\panel.jpg" alt="Random Name" style="width:400px">
+<p><b>PRICE = Rs. 19999</b></p>
+
+
+<table align="center" cellpadding="5">
+<section class="w3-row-padding w3-center w3-light-grey">
+<tr align="center" bordercolor="black">
+<td align="center" colspan=3>Equipments</td>
+ </tr>
+  <tr align="center" bordercolor="black">
+<td colspan=1 rowspan=1 bordercolor="black"><article class="w3-third">
+      <img src=".\images\p11.jpeg" alt="Random Name" width=100% usemap="#panel" style="border: 2px solid black">
+<map name="panel">
+<area shape="rect" coords="0,0,450,450" href="power.html">
+</map>
+<p align="center"><b>Panel</b></p>
+  </article></td>
+<td colspan=1 rowspan=1 bordercolor="black">
+  <article class="w3-third">
+    <img src=".\images\p27.jpeg" alt="Random Name" width=100% usemap="#cooker" style="border: 2px solid black">
+<map name="cooker">
+<area shape="rect" coords="0,0,450,450" href="street.html">
+</map>
+<p align="center"><b>Solar Street Light</b></p>
+    </article></td>
+<td colspan=1 rowspan=1 align="center" bordercolor="black">
+  <article class="w3-third">
+    <img src=".\images\p20.jpeg" alt="Random Name" width=100% usemap="#heater" style="border: 2px solid black">
+<map name="heater">
+<area shape="rect" coords="0,0,450,450" href="heater.html">
+</map>
+<p align="center"><b>Heater</b></p>
+  </article></td>
+</tr>
+</section>
+</table>
+  
+
+</body>
+</html>
